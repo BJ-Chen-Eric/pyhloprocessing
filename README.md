@@ -24,7 +24,11 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(pyhloprocessing)
-## basic example code
+raw_processing(meta_path = here::here('data', 'gisaid_raw_processing_test.csv'),
+               gisaid_seq_path = here::here('data', 'gisaid_raw_processing_test.fasta'),
+               ird_seq_path = here::here('data', 'ird_raw_processing_test.fa') ,
+               out_fasta_path = paste(getwd(), '/', sep = ''),
+               out_fasta_prefix = 'processing_test')
 ```
 
 What is special about using `README.Rmd` instead of just `README.md`?
