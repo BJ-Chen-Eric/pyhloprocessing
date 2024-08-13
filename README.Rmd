@@ -34,7 +34,7 @@ pak::pak("BJ-Chen-Eric/pyhloprocessing")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-library(pyhloprocessing)
+# library(pyhloprocessing)
 raw_processing(meta_path = here::here('data', 'gisaid_raw_processing_test.csv'),
                gisaid_seq_path = here::here('data', 'gisaid_raw_processing_test.fasta'),
                ird_seq_path = here::here('data', 'ird_raw_processing_test.fa') ,
