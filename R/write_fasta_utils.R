@@ -12,7 +12,7 @@ function(sequence, header, file_out) {
   out <- matrix(0,0,0) %>% as.data.frame()
   if(identical(stringr::str_extract(header[1], pattern = '>'), '>')) {
     next
-  }else{paste('>', header, sep = '')}
+  }else{header <- paste('>', header, sep = '')}
   
   out[seq(1, length(sequence)*2, 2), 1] <- header
   out[seq(2, length(sequence)*2, 2), 1] <- sequence
