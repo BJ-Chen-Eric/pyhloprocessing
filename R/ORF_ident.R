@@ -8,7 +8,7 @@
 #' @details DETAILS
 #' @rdname ORF_ident
 #' @export 
-#' @import data.table 
+#' @importFrom data.table fread 
 #' @import here
 #' @import rlang
 #' @import stringr
