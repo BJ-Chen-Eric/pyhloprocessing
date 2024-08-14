@@ -15,7 +15,8 @@
 ORF_ident <- 
 function(fasta_path, coor_gap_thres=86, out_fasta_path=paste(getwd(), '/', sep = ''), out_fasta_prefix='ORF') {
   aligned <- read_as_list(path = fasta_path, prefix = 'fa|fasta', file_type = 'fasta')
-  outlier <- data.table::fread(here::here('outlier', 'outlier.csv')) %>% as.data.frame()
+  outlier <- data.table::fread(system.file('R/outlier.RData', package = 'pyhloprocessing')) %>% 
+    as.data.frame()
   
   # j="gisaid_IRD_merged_H5_aligned"
   # j="all_clean_H15_aligned" 
