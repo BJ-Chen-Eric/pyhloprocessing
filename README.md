@@ -25,15 +25,21 @@ This is a basic example which shows you how to solve a common problem:
 ``` r
 library(pyhloprocessing)
 ## basic example code: sequence merge and filtering
-raw_processing(meta_path = here::here('test_data/raw/', 'gisaid_raw_processing_test.csv'), 
-               gisaid_seq_path = here::here('test_data/raw/', 'gisaid_raw_processing_test.fasta'), 
-               ird_seq_path = here::here('test_data/raw/', 'ird_raw_processing_test.fa') , 
+m_path <- system.file('test_data/raw/gisaid_raw_processing_test.csv', package = 'pyhloprocessing')
+gis_fa_path <- system.file('test_data/raw/gisaid_raw_processing_test.fasta', package = 'pyhloprocessing')
+ird_fa_path <- system.file('test_data/raw/ird_raw_processing_test.fa', package = 'pyhloprocessing')
+
+raw_processing(meta_path = m_path, 
+               gisaid_seq_path = gis_fa_path, 
+               ird_seq_path = ird_fa_path , 
                out_fasta_path = paste(getwd(), '/', sep = ''),
                out_fasta_prefix = 'processing_test')
                
 ## basic example code: Open reading frame identification
+fa_path <- system.file('test_data/align/', package = 'pyhloprocessing')
+
 ORF_ident(fasta_path = here::here('test_data/align/'), coor_gap_thres = 86, 
-          out_fasta_path = '~/', out_fasta_prefix = 'test_orf')
+          out_fasta_path = paste(getwd(), '/', sep = ''), out_fasta_prefix = 'test_orf')
                
 ```
 
