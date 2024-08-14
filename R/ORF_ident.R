@@ -9,7 +9,6 @@
 #' @rdname ORF_ident
 #' @export 
 #' @importFrom data.table fread 
-#' @import here
 #' @import rlang
 #' @import stringr
 ORF_ident <- 
