@@ -8,8 +8,6 @@ organ_subtype(in_seq)
 }
 \arguments{
 \item{in_seq}{dataframe contain the subtype and segment information}
-
-\item{subtype_col}{The col contain the segment information}
 }
 \value{
 list contain the internal gene, HA and NA dataframe

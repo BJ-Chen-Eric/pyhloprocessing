@@ -77,7 +77,7 @@ function(fasta_path, coor_gap_thres=86, out_fasta_path=paste(getwd(), '/', sep =
         if(nrow(B) > 100) {
           x=x+1
           sub_fill_list[[x]] <- B
-        }else(next)
+        }else{next}
       }
       
       for(i in seq_along(sub_fill_list))  {

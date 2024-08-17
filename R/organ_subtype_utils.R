@@ -1,7 +1,6 @@
 #' @title organ_subtype
 #' @description Devide the dataframe by subtypes
 #' @param in_seq dataframe contain the subtype and segment information
-#' @param subtype_col The col contain the segment information
 #' @return list contain the internal gene, HA and NA dataframe
 #' @details DETAILS
 #' @rdname organ_subtype

@@ -6,7 +6,7 @@
 \alias{pyhloprocessing-package}
 \title{pyhloprocessing: Sequences processing and lineage cleavage in phlyogenetic tree}
 \description{
-Package process sequences for phylogenetics and lineage cleavage
+Provides tools for analyzing and visualizing data related to avian influenza. The package includes functions for sequence alignment, phylogenetic analysis, and clade identification, integrating data from GISAID and IRD.
 }
 \author{
 \strong{Maintainer}: Eric Chen \email{cysh010479@gmail.com}
