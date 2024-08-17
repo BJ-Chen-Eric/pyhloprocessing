@@ -1,10 +1,9 @@
 Package: pyhloprocessing
 Title: Sequences processing and lineage cleavage in phlyogenetic tree
-Version: 0.0.0.9002
+Version: 0.0.0.9003
 Authors@R: 
     person("Eric", "Chen", , "cysh010479@gmail.com", role = c("aut", "cre"))
-Description: Package process sequences for phylogenetics and lineage
-    cleavage
+Description: Provides tools for analyzing and visualizing data related to avian influenza. The package includes functions for sequence alignment, phylogenetic analysis, and clade identification, integrating data from GISAID and IRD.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -14,7 +13,6 @@ Imports:
     data.table,
     dplyr,
     fs,
-    here,
     purrr,
     rlang,
     seqinr,
@@ -24,3 +22,4 @@ NeedsCompilation: no
 Packaged: 2024-08-13 08:33:21 UTC; eric
 Author: Eric Chen [aut, cre]
 Maintainer: Eric Chen <cysh010479@gmail.com>
+SystemRequirements: MAFFT (https://mafft.cbrc.jp/alignment/software/)
